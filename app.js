@@ -16,19 +16,21 @@ const fromEuroToDollar = function(valueInEuro){
     // retornamos el valor
     return valueInDollar;
 }
-console.log(valueInDollar)
+console.log(fromEuroToDollar(3.5))
+
 const fromDollarToYen = function(valueInDollar){
     // convertimos el valor a 
     let valueInYen = valueInDollar * 127.9;
     // retornamos el valor
     return valueInYen;
 }
-console.log(valueInYen)
+console.log(fromDollarToYen(4.2))
+
 const fromYentoPound = function(valueInYen){
     // convertimos el valor a 
     let valueInPound= valueInYen * 0.8;
     // retornamos el valor
     return valueInPound;
 }
-console.log(valueInPound)
+console.log(fromYentoPound(537.18))
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYentoPound }
